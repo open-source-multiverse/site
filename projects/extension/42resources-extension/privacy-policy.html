@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>42Resources Extension</title>
+    <style>
+        :root {
+            --primary-color: #59c7fe;
+            --secondary-color: #fb64b6;
+            --text-color: #fff;
+            --background-color: #000000;
+            --hover-color: #e6f7f7;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background: var(--background-color);
+            color: var(--text-color);
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            margin: auto;
+            background: var(--background-color);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: var(--hover-color);
+            color: var(--background-color);
+        }
+
+        .download-button.chrome {
+            background-color: var(--primary-color);
+        }
+
+        .download-button.chrome:hover {
+            background-color: var(--hover-color);
+            color: var(--background-color);
+        }
+
+        .features, .installation, .usage, .contributing {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: var(--primary-color);
+            color: var(--text-color);
+            margin-top: 20px;
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--hover-color);
+        }
+
+        code {
+            background-color: #333;
+            padding: 2px 5px;
+            border-radius: 3px;
+            color: var(--primary-color);
+        }
+        .osm-logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 200px;
+            flex-direction: column;
+            /* margin: auto ; */
+            /* background-color: blue; */
+        }
+        .osm-title
+        {
+            width: 128px;
+
+        }
+
+        header 
+        {
+            padding-top: 1px;
+            /* max-width: 1200px; */
+            /* background-color: red; */
+
+        }
+
+        .logo-container
+        {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+            /* background-color: blueviolet; */
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            
+            <div class="osm-logo">
+                <img src="./src/osm-logo.png" width="128px" height="128px"/>
+                <div class="osm-title">OSM</div>
+            </div>
+            <div class="osm-logo">
+                <img src="./src/icons.png" width="128px" height="128px"/>
+                <div class="osm-title">42Resources</div>
+            </div>
+
+            <!-- <img src="./src/icons.png" width="128px" height="128px"/> -->
+        </div>
+        <h1>42Resources Extension</h1>
+        <p>A browser extension for 42 Network students to find project resources and prepare for evaluations.</p>
+    </header>
+
+    <div class="container">
+        <!-- Overview -->
+        <section class="overview">
+            <h2>📖 Overview</h2>
+            <p>42Resources is a tool tailored for 42 students to:</p>
+            <ul>
+                <li>Quickly find resources: Access curated documentation, tutorials, and tips for 42 projects.</li>
+                <li>Prepare for evaluations: Explore commonly asked questions and potential answers for your projects.</li>
+            </ul>
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+            <h2>🔧 Features</h2>
+            <ul>
+                <li>Project Resources: Comprehensive list of resources for 42 projects.</li>
+                <li>Evaluation Questions: Commonly asked questions for peer evaluations.</li>
+                <li>Cross-Browser Compatibility: Works on Chrome and Firefox.</li>
+            </ul>
+        </section>
+
+        <!-- Installation -->
+        <section class="installation">
+            <h2>🛠️ Installation</h2>
+            <h3>For Firefox</h3>
+            <p>Download the extension file (.xpi) and install it:</p>
+            <a href="./firefox/v2.1.xpi" class="download-button">Download for Firefox</a>
+            <p>sha256: 96c7899eb47257cbb8b3db833087a14a4d9f3a79adc339a2230288c24249cff0</p>
+            <h3>For Chrome</h3>
+            <p>Get the extension from the Chrome Web Store:</p>
+            <a href="https://chromewebstore.google.com/detail/42resources/ggofaflipcgmpkbeegdfiibhicjndced" class="download-button chrome">Get on Chrome Web Store</a>
+        </section>
+
+        <!-- Usage -->
+        <section class="usage">
+            <h2>🗂️ Usage</h2>
+            <ol>
+                <li>Open Intra: <a href="https://projects.intra.42.fr" target="_blank">https://projects.intra.42.fr</a>.</li>
+                <li>Search for your project.</li>
+                <li>Click on the "Resources" or "Questions" button.</li>
+            </ol>
+        </section>
+
+        <section class="contributing">
+            <h2>🌟 Contributing</h2>
+            <p>We welcome contributions from the OSM community!</p>
+            <ol>
+                <li>Fork the repository on GitHub.</li>
+                <li>Create a new branch: <code>git checkout -b feature/your-feature-name</code>.</li>
+                <li>Commit your changes: <code>git commit -m 'Add new feature'</code>.</li>
+                <li>Push to the branch: <code>git push origin feature/your-feature-name</code>.</li>
+                <li>Submit a pull request.</li>
+            </ol>
+        </section>
+
+        <!-- Support -->
+        
+        <section class="support">
+            <h2>Privacy Policy</h2>
+            <a href="./privacy-policy.html" class="download-button chrome">Visit page</a>
+        </section>
+
+        <section class="support">
+            <h2>🤝 Support</h2>
+            <p>Have questions or need assistance?</p>
+            <ul>
+                <li>Report bugs or suggest features via the <a href="https://github.com/open-source-multiverse/42resources-extention/issues">Issues tab</a>.</li>
+                <li>Contact: <a href="mailto:opensourcemultiverse@gmail.com">opensourcemultiverse@gmail.com</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>🧑‍💻 Developed By OSM community</p>
+    </footer>
+</body>
+</html>
